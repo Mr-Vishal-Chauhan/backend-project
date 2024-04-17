@@ -1,0 +1,1729 @@
+{
+	"info": {
+		"_postman_id": "e40c524f-f4dd-4c50-8123-c55d4954d1e4",
+		"name": "Go Drive",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33295360"
+	},
+	"item": [
+		{
+			"name": "Dealer",
+			"item": [
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "Sign In",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWZlMzljODkyMDM2NzkzOWM2ZmMxYjUiLCJuYW1lIjoiVml2ZWsgQ2hhdWhhbiIsImVtYWlsIjoiQ2hhdWhhbmppQGdtYWlsLmNvbSIsInVzZXJUeXBlIjoyLCJpYXQiOjE3MTEzNTk1MjEsImV4cCI6MTcxMTQ0NTkyMX0.jiftlCsxn3CY-J7E3fKO2JIRVA6VYTkoH-QzJXu64fQ",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Vivek Chauhan",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "Dealer5@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123",
+											"type": "text"
+										},
+										{
+											"key": "contact",
+											"value": "252525636",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "chachoki colony near prabhakar marble",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/signin",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"signin"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "Dealer5@gmail.com",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": "123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/login",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Account",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWZlMzljODkyMDM2NzkzOWM2ZmMxYjUiLCJuYW1lIjoiVml2ZWsgQ2hhdWhhbiIsImVtYWlsIjoiQ2hhdWhhbmppQGdtYWlsLmNvbSIsInVzZXJUeXBlIjoyLCJpYXQiOjE3MTEzNTk1MjEsImV4cCI6MTcxMTQ0NTkyMX0.jiftlCsxn3CY-J7E3fKO2JIRVA6VYTkoH-QzJXu64fQ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "66014a22ed17158f76781e73",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "please delete its not good",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:5001/dealer/delete",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"dealer",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Account",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWZlMzljODkyMDM2NzkzOWM2ZmMxYjUiLCJuYW1lIjoiVml2ZWsgQ2hhdWhhbiIsImVtYWlsIjoiQ2hhdWhhbmppQGdtYWlsLmNvbSIsInVzZXJUeXBlIjoyLCJpYXQiOjE3MTExNTk4MTcsImV4cCI6MTcxMTI0NjIxN30.BTFf6hXdemEMVhQH-k9xxwhoU-V8RqVBVjUCQ6vSvhY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "65fe39c8920367939c6fc1b2",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Vivek Kumar chauhan",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "Vivek07@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "contact",
+											"value": "9875785301",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:5001/apis/dealer/update",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"apis",
+										"dealer",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Change Password",
+							"request": {
+								"method": "POST",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "car",
+					"item": [
+						{
+							"name": "delete car",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "maruti suziji",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "categoryId",
+											"value": "65fa375d515ad263526ca9e0",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "description",
+											"value": "hii this is new brand car",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "price",
+											"value": "500",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "image",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "email",
+											"value": "Vishal@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/deleteCar",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"deleteCar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get all cars",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/allCar",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"allCar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update car",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/updateCar",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"updateCar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "find car",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/singleCar",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"singleCar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add-car",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}/addCar",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"addCar"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Bike",
+					"item": [
+						{
+							"name": "delete bike",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "maruti suziji",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "categoryId",
+											"value": "65fa375d515ad263526ca9e0",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "description",
+											"value": "hii this is new brand car",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "price",
+											"value": "500",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "image",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "email",
+											"value": "Vishal@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/deleteBike",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"deleteBike"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get all bikes",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/allBike",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"allBike"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update bike",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/updateBike",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"updateBike"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "find bike",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/singleBike",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"singleBike"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add-bike",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}/addBike",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"addBike"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "booking request",
+					"item": [
+						{
+							"name": "View Bookings",
+							"request": {
+								"method": "POST",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "booking cancel",
+							"request": {
+								"method": "POST",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "Vishal@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/login",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Dashboard",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}/dashboard",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"dashboard"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Change Password",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}/changePassword",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"changePassword"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "all Users",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}/allUser",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"allUser"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Block User",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6602f435c30118eefaac4565",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "status",
+											"value": "false",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/userBlock",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"userBlock"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "category",
+					"item": [
+						{
+							"name": "Add category",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "electrical bycycle",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "description",
+											"value": "two wheeler electrical vehicles ",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "_id",
+											"value": "660d00b9c638e29d5c4bf063",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/add",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete category",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "65fa375d515ad263526ca9e0",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/delete",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"delete"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "all category",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/all",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update category",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}/update",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"update"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Customer",
+					"item": [
+						{
+							"name": "delete Customer",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}/delete",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"delete"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "all Customer",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/all",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Single Customer",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/single",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"single"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Dealer",
+					"item": [
+						{
+							"name": "all Dealer",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/allDealer",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"allDealer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Single Dealer",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/singleDealer",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"singleDealer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete Dealer",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}/deleteDealer",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"deleteDealer"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "booking request",
+					"item": [
+						{
+							"name": "all Booking",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}/allBooking",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"allBooking"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "single Booking",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}/singleBooking",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"singleBooking"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "customer",
+			"item": [
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "Delete Account",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6604d1043c9d5fad5720facb",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "description",
+											"value": "this app is so amazing now i have new phone ",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "status",
+											"value": "false",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/delete",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"delete"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Account",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}/update",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "customer6@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/login",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"login"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "customer4@gmail.com",
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": "1234",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sign In",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "customer6@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "vishal chauhan",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/signin",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"signin"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Change Password",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6617d614e7133790a9fe7d57",
+											"type": "text"
+										},
+										{
+											"key": "currPassword",
+											"value": "12345",
+											"type": "text"
+										},
+										{
+											"key": "newPassword",
+											"value": "123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/changePassword",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"changePassword"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Booking Car",
+					"item": [
+						{
+							"name": "Booking",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "carId",
+											"value": "65fba685edec210c5839b4ae",
+											"type": "text"
+										},
+										{
+											"key": "pickupLocation",
+											"value": "jalandhar",
+											"type": "text"
+										},
+										{
+											"key": "dropOffLocation",
+											"value": "amritsar",
+											"type": "text"
+										},
+										{
+											"key": "userId",
+											"value": "660aa8f1f5761f7ee1f9e257",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "pickupDate",
+											"value": "11.04.2024",
+											"type": "text"
+										},
+										{
+											"key": "dropOffDate",
+											"value": "11.04.2024",
+											"type": "text"
+										},
+										{
+											"key": "purpose",
+											"value": "just personal purpose",
+											"type": "text"
+										},
+										{
+											"key": "customerName",
+											"value": "vishal chauhan",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "customerContact",
+											"value": "6283611501",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "_id",
+											"value": "6616ab86df7a284ea91d3015",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "purpose",
+											"value": "we are not able to take car for rent",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/bookingCar",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"bookingCar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cancel Booking",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/cancelCarBooking",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cancelCarBooking"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Booking",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/updateBookingCar",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"updateBookingCar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Single Booking",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/singleBookingCar",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"singleBookingCar"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Booking Bike",
+					"item": [
+						{
+							"name": "Booking",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "bikeId",
+											"value": "65fba685edec210c5839b4ae",
+											"type": "text"
+										},
+										{
+											"key": "pickupLocation",
+											"value": "jalandhar",
+											"type": "text"
+										},
+										{
+											"key": "dropOffLocation",
+											"value": "amritsar",
+											"type": "text"
+										},
+										{
+											"key": "userId",
+											"value": "660aa8f1f5761f7ee1f9e257",
+											"type": "text"
+										},
+										{
+											"key": "pickupDate",
+											"value": "11.04.2024",
+											"type": "text"
+										},
+										{
+											"key": "dropOffDate",
+											"value": "11.04.2024",
+											"type": "text"
+										},
+										{
+											"key": "purpose",
+											"value": "just personal purpose",
+											"type": "text"
+										},
+										{
+											"key": "customerName",
+											"value": "vishal chauhan",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "customerContact",
+											"value": "6283611501",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "_id",
+											"value": "6616ab86df7a284ea91d3015",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "purpose",
+											"value": "we are not able to take car for rent",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/bookingBike",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"bookingBike"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cancel Booking",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/cancelBikeBooking",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cancelBikeBooking"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Booking",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/updateBookingBike",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"updateBookingBike"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Single Booking",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/singleBookingBike",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"singleBookingBike"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "view Cars",
+					"item": [
+						{
+							"name": "all Car",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/allCar",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"allCar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Single car",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/getSingleCar",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"getSingleCar"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "view Bikes",
+					"item": [
+						{
+							"name": "all Bikes",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/allBike",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"allBike"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Single bike",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/getSingleBike",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"getSingleBike"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
